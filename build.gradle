@@ -26,8 +26,8 @@ publishing {
                 name = 'Fluent Retry'
                 description = 'A lightweight Java retry utility'
                 url = 'https://github.com/safari-mohammadreza/fluent-retry-library'
-                licenses { license { name = 'MIT'; url = 'https://opensource.org/licenses/MIT' }}
-                developers { developer { id = 'safari-mohammadreza'; name = 'Mohammadreza Safari'; email = 'Reza.Safari6311@gmail.com' }}
+                developers { developer { id = 'safari-mohammadreza'; name = 'Mohammadreza Safari';
+                    email = 'Reza.Safari6311@gmail.com' }}
                 scm { connection = 'scm:git:git://github.com/safari-mohammadreza/fluent-retry-library.git' }
             }
         }
