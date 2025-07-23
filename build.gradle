@@ -3,7 +3,7 @@ plugins {
     id 'maven-publish'
 }
 
-group = 'com.example'
+group = 'com.example.retry'
 version = '1.0.0'
 
 repositories {
