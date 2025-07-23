@@ -1,0 +1,35 @@
+plugins {
+    id 'java'
+    id 'maven-publish'
+}
+
+group = 'com.example'
+version = '1.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.2'
+}
+
+tasks.test {
+    useJUnitPlatform()
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+            pom {
+                name = 'Fluent Retry'
+                description = 'A lightweight Java retry utility'
+                url = 'https://github.com/safari-mohammadreza/fluent-retry-library'
+                licenses { license { name = 'MIT'; url = 'https://opensource.org/licenses/MIT' }}
+                developers { developer { id = 'safari-mohammadreza'; name = 'Mohammadreza Safari'; email = 'Reza.Safari6311@gmail.com' }}
+                scm { connection = 'scm:git:git://github.com/safari-mohammadreza/fluent-retry-library.git' }
+            }
+        }
+    }
+}
